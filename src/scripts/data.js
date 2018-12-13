@@ -7,18 +7,7 @@ const data = {
     headers: {
         "Content-Type": "application/json"
     },
-    // Where the argument is called and the object is passed that has been declared in eventListener.js
-    body: JSON.stringify(legoToSaveArg)
-        })
-    },
-
-    postLegoColor(legoToSaveArg){
-        fetch("http://localhost:8088/colors", {
-    method: "POST",
-    headers: {
-        "Content-Type": "application/json"
-    },
-    // Where the argument is called and the object is passed that has been declared in eventListener.js
+    // Where the argument is called and the object is passed that has been declared in eventListener.js 
     body: JSON.stringify(legoToSaveArg)
         })
     }
