@@ -6,6 +6,7 @@ const eventListeners = {
         const name = document.querySelector("#lego__name").value;
         const shape = document.querySelector("#lego__shape").value;
         const color = document.querySelector("#lego__color").value;
+        
         // Then console.log-ing the values declared above
         // console.log(creator);
         // console.log(name);
@@ -17,12 +18,18 @@ const eventListeners = {
         const legoToSave = {
             creatorName: creator,
             legoName: name,
-            legoColor: color,
             legoShape: shape
         }
+
+       const legoColorToSave = {
+            legoColor: color,
+        }
+
         console.log(legoToSave);
+        console.log(legoColorToSave);
 
         // Post to API and passing legoToSave (the object above) as an argument
         data.postLego(legoToSave);
+        data.postLegoColor(legoColorToSave)
     }
 };
